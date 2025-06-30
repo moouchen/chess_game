@@ -1,33 +1,38 @@
 # 🐺 WolfChess
 
-**WolfChess** is a full-featured 2D chess game built with **Pygame** and powered by the **python-chess** engine. It offers a smooth and engaging chess experience with animated moves, custom sounds, and full support for chess rules including castling, en passant, promotion, check, and checkmate detection.
+**WolfChess** is a complete 2D chess game built with **Pygame** and powered by **python-chess**. It features full rule support, animated piece movements, sound effects, and visual feedback for special events like check, checkmate, stalemate, castling, and promotions.
 
 ## 🎯 Features
 
-- 🧠 **Powered by python-chess** for accurate rule enforcement
-- 🎨 **Fully custom 2D GUI** built using Pygame
-- 🏰 Supports:
-  - Castling (both kingside and queenside)
+- 🧠 Rule validation via `python-chess`
+- 🎨 Pygame-based GUI with drag-and-drop movement
+- 🏰 Full support for:
+  - Castling (both sides)
   - En passant
-  - Pawn promotion
-  - Check, checkmate, and stalemate detection
-- 🔊 Rich sound effects:
-  - Move, capture, castle, check, promotion, illegal move, and game end
-- 🔥 Visual effects for checkmate and stalemate
+  - Promotion (currently via console)
+  - Check, checkmate, and stalemate
+- 🔊 Sound effects for all game actions
+- ⚔️ Visual feedback for special events like checkmate
+
+## 🖼️ GUI Preview
+
+| Game UI | In-game Move | Checkmate Effect |
+|---------|---------------|------------------|
+| ![](pics/gui.png) | ![](pics/gui%20(2).png) | ![](pics/checkmate.png) |
 
 ## 🕹️ Controls
 
-- Click and drag pieces to make moves
-- Validates legal moves automatically
-- Console-based pawn promotion input (to be improved)
+- Click and drag pieces to move
+- Move validation via `python-chess`
+- Console prompt for pawn promotion (GUI version coming soon)
 
 ## 🧩 Requirements
 
-- Python 3.8 or higher
+- Python 3.8+
 - `pygame`
 - `python-chess`
 
-Install dependencies:
+Install with:
 
 ```bash
 pip install pygame python-chess
